@@ -1,2 +1,3 @@
 # Jawi-Baru-Transliteration
-A translator for new Jawi language into Rumi.
+
+A translator for Rumi language into new Jawi.
