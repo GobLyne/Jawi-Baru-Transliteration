@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jawi Translator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Jawi Translator</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="greeting">
+            <h1>Salam!</h1>
+            <p>Kami akan membantu anda untuk terjemahkan diantara perkataan <span class="highlight">Jawi</span> dan <span class="highlight">Rumi</span>. Masukkan perkataan anda dan kami akan uruskan!</p>
+        </section>
+
+        <section class="translator">
+            <div class="input-box">
+                <textarea id="rumi-text" placeholder="Masukkan perkataan Rumi..."></textarea>
+                <div class="buttons">
+                  <button class="btn clear">Clear</button>
+                  <button class="btn translate">Translate</button>
+                </div>
+            </div>
+            <div class="output-box">
+                <textarea id="jawi-text" placeholder="Terjemahan Jawi akan diberikan di sini..." readonly></textarea>
+                <div class="buttons">
+                  <button class="btn copy">Copy</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Aplikasi Terjemahan Jawi Dalam Talian ini dibangunkan untuk
+            membantu memartabatkan semula tulisan Jawi yang telah digunakan sejak sekian lama.
+        </p>
+        <p style="margin-top: 25px; color: #838383;">Copyright © Jawi Translator 2024</p>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+
+</html>
