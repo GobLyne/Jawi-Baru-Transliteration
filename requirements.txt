@@ -5,4 +5,4 @@ sentencepiece
 fastapi
 pydantic
 gunicorn
-torch
+torch+cpu
