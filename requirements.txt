@@ -3,3 +3,4 @@ transformers
 streamlit
 fastapi
 pydantic
+gunicorn
