@@ -1,6 +1,7 @@
 uvicorn
 transformers
 streamlit
+sentencepiece
 fastapi
 pydantic
 gunicorn

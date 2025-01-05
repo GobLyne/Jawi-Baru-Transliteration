@@ -5,7 +5,7 @@ from pydantic import BaseModel
 from transformers import MBartForConditionalGeneration, MBartTokenizer, MBartConfig
 
 # Load model and tokenizer at startup
-MODEL_PATH = "model"  # Path to your model folder
+MODEL_PATH = "GobLyne/Rumi-Jawi-Translater"  # Path to your model folder
 tokenizer = MBartTokenizer.from_pretrained(MODEL_PATH)
 model = MBartForConditionalGeneration.from_pretrained(MODEL_PATH)
 
@@ -15,6 +15,7 @@ app = FastAPI()
 origins = [
     "http://127.0.0.1:5500",  # Your frontend origin (adjust port if needed)
     "http://localhost:5500",   # Another common frontend origin
+    "https://goblyne.github.io/Jawi-Baru-Transliteration/"
 ]
 
 # Add CORS middleware
@@ -51,5 +52,7 @@ async def translate(data: TranslationRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
 # Run with this command inside terminal
 # uvicorn main:app --reload
