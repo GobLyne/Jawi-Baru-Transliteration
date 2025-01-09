@@ -13,7 +13,7 @@
 
 async function translateText(rumiText) {
   try {
-      const response = await fetch('https://jawi-baru-transliteration.onrender.com/translate', { // Replace with your FastAPI server URL
+      const response = await fetch('http://localhost:8000/translate', { // Replace with your FastAPI server URL
           method: 'POST',
           headers: {
               'Content-Type': 'application/json',
