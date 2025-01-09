@@ -41,7 +41,7 @@ const translateButton = document.querySelector(".btn.translate");
 const copyButton = document.querySelector(".btn.copy");
 
 // Character limit counter
-const charLimit = 120;
+const charLimit = 150;
 const charCounter = document.createElement("div");
 charCounter.style.marginTop = "10px";
 charCounter.style.color = "#838383";

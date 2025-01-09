@@ -43,7 +43,7 @@ async def translate(data: TranslationRequest):
     try:
         # Translate the text
         inputs = tokenizer(sentence, return_tensors="pt")
-        translated_tokens = model.generate(**inputs,  decoder_start_token_id=tokenizer.lang_code_to_id["ar_AR"], early_stopping=True, max_length=120)
+        translated_tokens = model.generate(**inputs,  decoder_start_token_id=tokenizer.lang_code_to_id["ar_AR"], early_stopping=True, max_length=150)
         pred = tokenizer.batch_decode(translated_tokens, skip_special_tokens=True)[0]
         pred = pred.replace("ar_AR", "").strip()
 
